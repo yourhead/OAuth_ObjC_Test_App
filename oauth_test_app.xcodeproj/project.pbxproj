@@ -16,7 +16,7 @@
 		002649810FEF40A000F590C4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002649800FEF40A000F590C4 /* Security.framework */; };
 		00264A630FEFE35300F590C4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00264A620FEFE35300F590C4 /* WebKit.framework */; };
 		00264B590FF03AA000F590C4 /* YHTwitterDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00264B580FF03AA000F590C4 /* YHTwitterDelegate.m */; };
-		00EA41B80FF2D97100711393 /* ReadMe.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 00EA41B70FF2D97100711393 /* ReadMe.rtf */; };
+		00EA41B80FF2D97100711393 /* ReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 00EA41B70FF2D97100711393 /* ReadMe.txt */; };
 		00EA421D0FF2E72200711393 /* MGTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EA41FE0FF2E72200711393 /* MGTwitterEngine.m */; };
 		00EA421E0FF2E72200711393 /* MGTwitterHTTPURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EA42020FF2E72200711393 /* MGTwitterHTTPURLConnection.m */; };
 		00EA421F0FF2E72200711393 /* MGTwitterLibXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EA42040FF2E72200711393 /* MGTwitterLibXMLParser.m */; };
@@ -63,7 +63,7 @@
 		00264A620FEFE35300F590C4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
 		00264B570FF03AA000F590C4 /* YHTwitterDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTwitterDelegate.h; sourceTree = "<group>"; };
 		00264B580FF03AA000F590C4 /* YHTwitterDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTwitterDelegate.m; sourceTree = "<group>"; };
-		00EA41B70FF2D97100711393 /* ReadMe.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = ReadMe.rtf; sourceTree = "<group>"; };
+		00EA41B70FF2D97100711393 /* ReadMe.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
 		00EA41FD0FF2E72200711393 /* MGTwitterEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterEngine.h; sourceTree = "<group>"; };
 		00EA41FE0FF2E72200711393 /* MGTwitterEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTwitterEngine.m; sourceTree = "<group>"; };
 		00EA41FF0FF2E72200711393 /* MGTwitterEngineDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterEngineDelegate.h; sourceTree = "<group>"; };
@@ -218,7 +218,7 @@
 		29B97314FDCFA39411CA2CEA /* oath_test_app */ = {
 			isa = PBXGroup;
 			children = (
-				00EA41B70FF2D97100711393 /* ReadMe.rtf */,
+				00EA41B70FF2D97100711393 /* ReadMe.txt */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -307,7 +307,7 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
-				00EA41B80FF2D97100711393 /* ReadMe.rtf in Resources */,
+				00EA41B80FF2D97100711393 /* ReadMe.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
