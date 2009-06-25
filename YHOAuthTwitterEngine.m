@@ -50,7 +50,7 @@
 
 @interface YHOAuthTwitterEngine (private)
 
-- (void)_requestURL:(NSString *)urlString token:(OAToken *)token success:(SEL)success;
+- (void)_requestURL:(NSString *)urlString token:(OAToken *)token onSuccess:(SEL)success onFail:(SEL)fail;
 - (void)_fail:(OAServiceTicket *)ticket data:(NSData *)data;
 
 - (void)_setRequestToken:(OAServiceTicket *)ticket withData:(NSData *)data;
@@ -150,7 +150,7 @@
 //
 - (void)requestRequestToken;
 {
-	[self _requestURL:kYHOAuthTwitterRequestTokenURL token:nil success:@selector(_setRequestToken:withData:)];
+	[self _requestURL:kYHOAuthTwitterRequestTokenURL token:nil onSuccess:@selector(_setRequestToken:withData:) onFail:@selector(_fail:data:)];
 }
 
 
@@ -161,7 +161,7 @@
 //
 - (void)requestAccessToken;
 {
-	[self _requestURL:kYHOAuthTwitterAccessTokenURL token:self.requestToken success:@selector(_setAccessToken:withData:)];
+	[self _requestURL:kYHOAuthTwitterAccessTokenURL token:self.requestToken onSuccess:@selector(_setAccessToken:withData:) onFail:@selector(_fail:data:)];
 }
 
 
@@ -183,7 +183,7 @@
 // this is a convienence function that creates a twitter request of a token
 // it creates a URL request, builds a token fetcher from it, then launches the fetch
 //
-- (void)_requestURL:(NSString *)urlString token:(OAToken *)token success:(SEL)success;
+- (void)_requestURL:(NSString *)urlString token:(OAToken *)token onSuccess:(SEL)success onFail:(SEL)fail;
 {
     OAMutableURLRequest *request = [[[OAMutableURLRequest alloc] initWithURL:[NSURL URLWithString:urlString] consumer:self.consumer token:token realm:nil signatureProvider:nil] autorelease];
 	if (!request)
@@ -191,7 +191,7 @@
 	
     [request setHTTPMethod:@"POST"];
     OADataFetcher *fetcher = [[[OADataFetcher alloc] init] autorelease];	
-    [fetcher fetchDataWithRequest:request delegate:self didFinishSelector:success didFailSelector:@selector(_fail:data:)];
+    [fetcher fetchDataWithRequest:request delegate:self didFinishSelector:success didFailSelector:fail];
 }
 
 
