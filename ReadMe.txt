@@ -15,12 +15,18 @@ This is not meant to be a complete twitter client.
 
 
 
+Example:
+I've included a compiled example with my own OAuth keys.
+I did this so that you have an example of how the app should behave after you insert your own keys obtained from twitter.  You can find the example in:
+OAuth_ObjC_Test_App/Example/
+
+
+
 To Use:
 You will need to create an OAuth applicaton registration on the Twitter site:
  http://twitter.com/oauth_clients/new
 Use the key and secret info provided there to modify the constants at the top of YHOAuthTwitterEngine.m
 You should also set up your callback url at the top of the YHTwitter.m
-
 
 
 
