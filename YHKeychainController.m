@@ -27,7 +27,6 @@ static YHKeychainController *_shared;
     if (self = [super init]) {
     }
 
-	_shared = nil;
     return self;
 }
 
